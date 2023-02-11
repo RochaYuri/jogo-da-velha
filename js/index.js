@@ -82,9 +82,9 @@ restartBtn.addEventListener("click", function (ev) {
   gameBtn.forEach(function (gameBtn) {
     gameBtn.innerText = "";
     gameBtn.dataset.value = "-";
-    // gameBtn.removeAttribute("disabled", "");
     gameBtn.classList.remove("winnerBorder");
     gameBtn.classList.add("gameBtn");
+    registerBtn.removeAttribute("disabled", "");
     document.getElementById("playerTimeDiv").classList.remove("winnerText");
     document.getElementById("playerTimeDiv").classList.remove("drawText");
     document.getElementById("playerSymbolX").innerText = "";
@@ -139,6 +139,7 @@ function winner(
       gameBtn.forEach(function (gameBtn) {
         gameBtn.setAttribute("disabled", "");
       });
+      registerBtn.setAttribute("disabled", "");
       playerTimeDiv.classList.add("drawText");
     }
   }
@@ -176,6 +177,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", ""); // desabilitando os botões
     });
+    registerBtn.setAttribute("disabled", "");
     // DESTACANDO O CAMIHNO DA VITÓRIA
     gameBtn1.classList.add("winnerBorder");
     gameBtn1.classList.remove("gameBtn");
@@ -206,6 +208,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", "");
     });
+    registerBtn.setAttribute("disabled", "");
     gameBtn1.classList.add("winnerBorder");
     gameBtn1.classList.remove("gameBtn");
     gameBtn4.classList.add("winnerBorder");
@@ -231,6 +234,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", "");
     });
+    registerBtn.setAttribute("disabled", "");
     gameBtn1.classList.add("winnerBorder");
     gameBtn1.classList.remove("gameBtn");
     gameBtn5.classList.add("winnerBorder");
@@ -256,6 +260,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", "");
     });
+    registerBtn.setAttribute("disabled", "");
     gameBtn2.classList.add("winnerBorder");
     gameBtn2.classList.remove("gameBtn");
     gameBtn5.classList.add("winnerBorder");
@@ -281,6 +286,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", "");
     });
+    registerBtn.setAttribute("disabled", "");
     gameBtn3.classList.add("winnerBorder");
     gameBtn3.classList.remove("gameBtn");
     gameBtn6.classList.add("winnerBorder");
@@ -306,6 +312,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", "");
     });
+    registerBtn.setAttribute("disabled", "");
     gameBtn3.classList.add("winnerBorder");
     gameBtn3.classList.remove("gameBtn");
     gameBtn5.classList.add("winnerBorder");
@@ -331,6 +338,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", "");
     });
+    registerBtn.setAttribute("disabled", "");
     gameBtn4.classList.add("winnerBorder");
     gameBtn4.classList.remove("gameBtn");
     gameBtn5.classList.add("winnerBorder");
@@ -356,6 +364,7 @@ function conditions(
     gameBtn.forEach(function (gameBtn) {
       gameBtn.setAttribute("disabled", "");
     });
+    registerBtn.setAttribute("disabled", "");
     gameBtn7.classList.add("winnerBorder");
     gameBtn7.classList.remove("gameBtn");
     gameBtn8.classList.add("winnerBorder");
