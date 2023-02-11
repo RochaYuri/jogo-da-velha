@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Rubik:wght@300;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body id="body" data-theme="dark">
+    <header class="header">
+        <button class="defaultBtn" id="themeSwitcher">Alterar tema Escuro/Claro</button>
+    </header>
+    <main class="mainContent">
+        <section class="gameSection">
+            <div class="playersDataDiv">
+                <div class="playersTitle">
+                    <p>Jogadores</p>
+                </div>
+                <div class="playersData">
+                    <form class="playersNameForm">
+                        <label for="player1Name">Jogador 1</label>
+                        <input type="text" id="player1Name" required>
+                        <label for="player2Name">Jogador 2</label>
+                        <input type="text" id="player2Name" required>
+                        <button type='submit' class="defaultBtn" id="registerBtn">Cadastrar Jogadores</button>
+                    </form>
+                    <div class="playersSymbolDiv">
+                        <p class="playerSymbol" id="playerSymbolX"></p>
+                        <p class="playerSymbol" id="playerSymbolO"></p>
+                    </div>
+                </div>
+                <div class="playerTimeText" id="playerTimeDiv">
+                    <p id="playerTurn"></p>
+                </div>
+            </div>
+            <div class="gameDiv">
+                <div class="gameBtnContainer">
+                    <button type="button" class="gameBtn" id="gameBtn1" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn2" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn3" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn4" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn5" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn6" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn7" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn8" data-value="-" disabled></button>
+                    <button type="button" class="gameBtn" id="gameBtn9" data-value="-" disabled></button>
+                </div>
+            </div>
+        </section>
+        <div class="restartBtnDiv">
+            <button class="defaultBtn" id="restartBtn">Reiniciar jogo</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copyright">
+            Jogo desenvolvido por <a targert="_blank" href="https://github.com/rochayuri">RochaYuri</a> || Código aberto
+            no <a target="_blank" href="https://github.com/rochayuri/tictactoe-game/">GitHub</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
