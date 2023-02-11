@@ -374,6 +374,7 @@ function conditions(
   draw = true;
 }
 
+// EVENTO PARA ALTERAR O TEMA
 switchTheme.addEventListener("click", function (ev) {
   if (body.dataset.theme === "dark") {
     root.style.setProperty("--bg-color", "#67819e");
