@@ -21,7 +21,7 @@ Game rules:
    - Filling is done alternately;
    - The first turn is drawn randomly by the player.
  
-    ==========
+  ==========
   
 Project information:
    - Player 1 will always be player X and player 2 will always be player O;
